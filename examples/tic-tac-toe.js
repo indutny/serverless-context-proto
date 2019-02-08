@@ -1,7 +1,7 @@
+// TODO(indutny): Make the game playable
+
 import { parse as parseURL } from 'url';
 import { parse as parseQuery } from 'querystring';
-
-const PID = process.pid;
 
 const TTL = 3600;  // 1 hour TTL
 
@@ -31,7 +31,6 @@ export const handler = async (req, ctx) => {
   const x = parseInt(query.x, 10) | 0;
   const y = parseInt(query.y, 10) | 0;
   const player = parseInt(query.player, 10) | 0;
-  console.log(query, game);
 
   if (player !== (game.turn % 2)) {
     return { status: 400, body: { error: 'It is not your turn now' } };

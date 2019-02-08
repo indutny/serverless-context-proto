@@ -1,4 +1,4 @@
-import { handler, merge } from './fn';
+import { handler, merge } from './examples/poll';
 import Context from './context';
 
 const context = new Context();
