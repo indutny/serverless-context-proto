@@ -9,7 +9,7 @@ platform-dependent.
 
 ## How?
 
-If eventualy consistency is acceptable, [CRDT][CRDT] structures could be used
+If eventual consistency is acceptable, [CRDT][CRDT] structures could be used
 for providing such persistence.
 
 #### LICENSE
